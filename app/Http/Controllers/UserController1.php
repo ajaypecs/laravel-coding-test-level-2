@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+
 use Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -130,10 +131,10 @@ class UserController extends Controller
         
         $ids = explode(',', $request->users_id);
         $result = User::whereIn('id', $ids)->delete();
-
+        // $result = $user->delete();
         if($result)
         {
-            return response()->json(['msg' => 'Record has been deleted', 'status' => 'Success']);
+            return response()->json(['status' => 'Record has been deleted']);
         }else 
         {
             return response()->json(['status' => 'failed']);
@@ -142,20 +143,6 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        
-        $user = User::where('username', $request->username)->first();
-        if(!$user|| !Hash::check($request->password, $user->password))
-        {
-            return response([
-                'msg' => "Please check your login credentials"
-            ], 404);
-        }
-        
-        $token = $user->createToken('my-app-token')->plainTextToken;
-
-        return response()->json([
-            'user' => $user,
-            'token' => $token,
-        ]);
+        return 'good';
     }
 }
