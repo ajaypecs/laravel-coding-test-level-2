@@ -1,0 +1,3 @@
+1. We can create this project in multipleways like make different login with different table and also make on table with roles and also with use of roles and permissions.
+
+2. I have not worked on UUID, but still i used in APIs with both way to get data like SAME as i given in database and also as we are getting in simple way.

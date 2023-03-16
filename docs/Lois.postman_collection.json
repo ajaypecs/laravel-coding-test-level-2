@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "a78ae552-2a1e-46ef-ac33-d146df543903",
+		"name": "Lois",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22531077"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/admin-login?username=admin&password=admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/admin-login?username=admin&password=admin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin-login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				},
+				"description": "Admin-Login-API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/users?id=84632669-3484-4387-bdfb-584e75562447",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/users?id=84632669-3484-4387-bdfb-584e75562447",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "84632669-3484-4387-bdfb-584e75562447"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/users?username=Rajesh&password=12345",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/users?username=Rajesh&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"users"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Rajesh"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/users/84632669-3484-4387-bdfb-584e75562447?username=Diwakar&password=12345",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/users/84632669-3484-4387-bdfb-584e75562447?username=Diwakar&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"users",
+						"84632669-3484-4387-bdfb-584e75562447"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Diwakar"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/users/84632669-3484-4387-bdfb-584e75562447?username=sharma",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/users/84632669-3484-4387-bdfb-584e75562447?username=sharma",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"users",
+						"84632669-3484-4387-bdfb-584e75562447"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "sharma"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/delete/f8ed80e9-8793-418b-8cd1-d22bf710142f",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|GEhD8iiobvYbKagj4SEBG4RHsPv64gkjqI8N4IlJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vi/delete/f8ed80e9-8793-418b-8cd1-d22bf710142f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vi",
+						"delete",
+						"f8ed80e9-8793-418b-8cd1-d22bf710142f"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "sharma",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/vi/delete-users/ec26938e-758c-4122-af09-eb6e9e9ef9b7, a3c1042a-475f-451e-8e1f-47cdbfd9cdaf",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|szVQSyk6Z4Dxns5Fd0JgSE1kzXM1t52NJDIGwiQ6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/owner/create-project?name=Project_2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owner",
+						"create-project"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Project_2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/owner/create-project?name=Project_4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|szVQSyk6Z4Dxns5Fd0JgSE1kzXM1t52NJDIGwiQ6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/owner/create-project?name=Project_4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owner",
+						"create-project"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Project_4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/owner/create-task?title=Designing - User Part&project_id=2380&user_id=223",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|szVQSyk6Z4Dxns5Fd0JgSE1kzXM1t52NJDIGwiQ6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/owner/create-task?title=Designing - Admin Module&project_id=2380&user_id=58&description=Make all admin desiging- userlist, create-category...",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owner",
+						"create-task"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Designing - Admin Module"
+						},
+						{
+							"key": "project_id",
+							"value": "2380"
+						},
+						{
+							"key": "user_id",
+							"value": "58"
+						},
+						{
+							"key": "description",
+							"value": "Make all admin desiging- userlist, create-category..."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login?username=user2&password=12345",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?username=user2&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user2"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/project/11?task_id=1253d4fa-23ce-468f-a701-4e6d091f13ef&status=IN_PROGRESS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|zkaQKpi2cafmyuDbdaaIi97Ik1clalcNluxJuoF0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/project/11?task_id=1253d4fa-23ce-468f-a701-4e6d091f13ef&status=IN_PROGRESS",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"project",
+						"11"
+					],
+					"query": [
+						{
+							"key": "task_id",
+							"value": "1253d4fa-23ce-468f-a701-4e6d091f13ef"
+						},
+						{
+							"key": "status",
+							"value": "IN_PROGRESS"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
